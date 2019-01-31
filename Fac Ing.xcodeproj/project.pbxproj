@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540A3E6A21C1D1100090B4D8 /* ConsultarAsesoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A3E6921C1D1100090B4D8 /* ConsultarAsesoria.swift */; };
+		540A3E6C21C1D5F80090B4D8 /* pickerDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A3E6B21C1D5F80090B4D8 /* pickerDay.swift */; };
+		5412D2CF21F790100070744C /* Carreras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412D2CE21F790100070744C /* Carreras.swift */; };
+		5412D2D121F7CB0A0070744C /* Divisiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412D2D021F7CB0A0070744C /* Divisiones.swift */; };
+		5412D2D321F7CB260070744C /* CeldaDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412D2D221F7CB260070744C /* CeldaDivision.swift */; };
+		541F103621EC053600F62B09 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F103521EC053600F62B09 /* PDF.swift */; };
+		541F103821EC591100F62B09 /* WebThor2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F103721EC591100F62B09 /* WebThor2.swift */; };
+		5447200C21D2F1780082A157 /* WebSIAE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5447200B21D2F1780082A157 /* WebSIAE.swift */; };
+		544AF5A321EF796B00D715A0 /* local.html in Resources */ = {isa = PBXBuildFile; fileRef = 544AF5A221EF796B00D715A0 /* local.html */; };
+		544E764221B991D4002F8A3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544E764121B991D4002F8A3A /* CollectionViewCell.swift */; };
+		54546BEF21E57FD2003540D2 /* WebThor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54546BEE21E57FD2003540D2 /* WebThor.swift */; };
+		5467905421BB1120004D43F2 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5467904121BB111E004D43F2 /* Info-iOS.plist */; };
+		5467905521BB1120004D43F2 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904221BB111E004D43F2 /* JTAppleCalendarDelegateProtocol.swift */; };
+		5467905621BB1120004D43F2 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904321BB111E004D43F2 /* UIScrollViewDelegates.swift */; };
+		5467905721BB1120004D43F2 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904421BB111E004D43F2 /* GlobalFunctionsAndExtensions.swift */; };
+		5467905821BB1120004D43F2 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904521BB111E004D43F2 /* JTAppleCalendarView.swift */; };
+		5467905921BB1120004D43F2 /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904621BB111E004D43F2 /* JTAppleCalendarVariables.swift */; };
+		5467905A21BB1120004D43F2 /* InternalActionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904721BB111E004D43F2 /* InternalActionFunctions.swift */; };
+		5467905B21BB1120004D43F2 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904821BB111E004D43F2 /* CalendarStructs.swift */; };
+		5467905C21BB1120004D43F2 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904921BB111F004D43F2 /* CalendarEnums.swift */; };
+		5467905D21BB1120004D43F2 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904B21BB111F004D43F2 /* UICollectionViewDelegates.swift */; };
+		5467905E21BB1120004D43F2 /* InternalQueryFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904C21BB111F004D43F2 /* InternalQueryFunctions.swift */; };
+		5467905F21BB1120004D43F2 /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904D21BB111F004D43F2 /* JTAppleCalendarLayoutProtocol.swift */; };
+		5467906021BB1120004D43F2 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904E21BB111F004D43F2 /* JTAppleCollectionReusableView.swift */; };
+		5467906121BB1120004D43F2 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904F21BB111F004D43F2 /* JTAppleCell.swift */; };
+		5467906221BB1120004D43F2 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467905021BB111F004D43F2 /* JTCalendarProtocols.swift */; };
+		5467906321BB1120004D43F2 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467905121BB111F004D43F2 /* JTAppleCalendarLayout.swift */; };
+		5467906421BB1120004D43F2 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5467905221BB1120004D43F2 /* Info-tvOS.plist */; };
+		5467906521BB1120004D43F2 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467905321BB1120004D43F2 /* UserInteractionFunctions.swift */; };
+		5467906721BB1314004D43F2 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467906621BB1314004D43F2 /* DateCell.swift */; };
+		5484BAB821FC9E0E0037A05F /* degree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5484BAB721FC9E0E0037A05F /* degree.swift */; };
+		54998A0121B5F39600BA7051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A0021B5F39600BA7051 /* AppDelegate.swift */; };
+		54998A0621B5F39600BA7051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54998A0421B5F39600BA7051 /* Main.storyboard */; };
+		54998A0821B5F39A00BA7051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54998A0721B5F39A00BA7051 /* Assets.xcassets */; };
+		54998A0B21B5F39A00BA7051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54998A0921B5F39A00BA7051 /* LaunchScreen.storyboard */; };
+		54998A1621B5F39A00BA7051 /* Fac_IngTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A1521B5F39A00BA7051 /* Fac_IngTests.swift */; };
+		54998A2121B5F39A00BA7051 /* Fac_IngUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A2021B5F39A00BA7051 /* Fac_IngUITests.swift */; };
+		54998A2F21B5F46900BA7051 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A2E21B5F46900BA7051 /* Resources.swift */; };
+		54998A3121B736EA00BA7051 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A3021B736EA00BA7051 /* Calendario.swift */; };
+		54998A3321B73CD400BA7051 /* RecursoSeleccionado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A3221B73CD400BA7051 /* RecursoSeleccionado.swift */; };
+		54998A3521B84F0C00BA7051 /* FooTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A3421B84F0B00BA7051 /* FooTableViewCell.swift */; };
+		54998A3721B85B7C00BA7051 /* Facultad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54998A3621B85B7C00BA7051 /* Facultad.swift */; };
+		54BB9F5A21F142D300A9A1B4 /* SeleccionFac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB9F5921F142D300A9A1B4 /* SeleccionFac.swift */; };
+		54CD174E21E485B3009E9997 /* CollectionEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CD174D21E485B3009E9997 /* CollectionEvents.swift */; };
+		54D35E9E21EBC82200B32ECE /* HightLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D35E9D21EBC82200B32ECE /* HightLights.swift */; };
+		54D4AAED21EF91160028CD21 /* PDFDirecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */; };
+		54D4AAEF21EF9A190028CD21 /* pol.html in Resources */ = {isa = PBXBuildFile; fileRef = 54D4AAEE21EF9A190028CD21 /* pol.html */; };
+		54D4AAF121EFC2AF0028CD21 /* WebThor3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4AAF021EFC2AF0028CD21 /* WebThor3.swift */; };
+		54DFEAC321D7EF7700AFCF22 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFEAC221D7EF7700AFCF22 /* Setup.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54998A1221B5F39A00BA7051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 549989F521B5F39600BA7051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 549989FC21B5F39600BA7051;
+			remoteInfo = "Fac Ing";
+		};
+		54998A1D21B5F39A00BA7051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 549989F521B5F39600BA7051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 549989FC21B5F39600BA7051;
+			remoteInfo = "Fac Ing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540A3E6921C1D1100090B4D8 /* ConsultarAsesoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultarAsesoria.swift; sourceTree = "<group>"; };
+		540A3E6B21C1D5F80090B4D8 /* pickerDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickerDay.swift; sourceTree = "<group>"; };
+		5412D2CE21F790100070744C /* Carreras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carreras.swift; sourceTree = "<group>"; };
+		5412D2D021F7CB0A0070744C /* Divisiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divisiones.swift; sourceTree = "<group>"; };
+		5412D2D221F7CB260070744C /* CeldaDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDivision.swift; sourceTree = "<group>"; };
+		541F103521EC053600F62B09 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
+		541F103721EC591100F62B09 /* WebThor2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor2.swift; sourceTree = "<group>"; };
+		5447200B21D2F1780082A157 /* WebSIAE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSIAE.swift; sourceTree = "<group>"; };
+		544AF5A221EF796B00D715A0 /* local.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.html; sourceTree = SOURCE_ROOT; };
+		544E764121B991D4002F8A3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		54546BEE21E57FD2003540D2 /* WebThor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor.swift; sourceTree = "<group>"; };
+		5467904121BB111E004D43F2 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		5467904221BB111E004D43F2 /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		5467904321BB111E004D43F2 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		5467904421BB111E004D43F2 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		5467904521BB111E004D43F2 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		5467904621BB111E004D43F2 /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
+		5467904721BB111E004D43F2 /* InternalActionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalActionFunctions.swift; sourceTree = "<group>"; };
+		5467904821BB111E004D43F2 /* CalendarStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStructs.swift; sourceTree = "<group>"; };
+		5467904921BB111F004D43F2 /* CalendarEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEnums.swift; sourceTree = "<group>"; };
+		5467904A21BB111F004D43F2 /* JTAppleCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTAppleCalendar.h; sourceTree = "<group>"; };
+		5467904B21BB111F004D43F2 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		5467904C21BB111F004D43F2 /* InternalQueryFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalQueryFunctions.swift; sourceTree = "<group>"; };
+		5467904D21BB111F004D43F2 /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		5467904E21BB111F004D43F2 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		5467904F21BB111F004D43F2 /* JTAppleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCell.swift; sourceTree = "<group>"; };
+		5467905021BB111F004D43F2 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		5467905121BB111F004D43F2 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		5467905221BB1120004D43F2 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		5467905321BB1120004D43F2 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		5467906621BB1314004D43F2 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		5484BAB721FC9E0E0037A05F /* degree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = degree.swift; sourceTree = "<group>"; };
+		549989FD21B5F39600BA7051 /* Fac Ing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fac Ing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54998A0021B5F39600BA7051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54998A0521B5F39600BA7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54998A0721B5F39A00BA7051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54998A0A21B5F39A00BA7051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54998A0C21B5F39A00BA7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54998A1121B5F39A00BA7051 /* Fac IngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fac IngTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54998A1521B5F39A00BA7051 /* Fac_IngTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fac_IngTests.swift; sourceTree = "<group>"; };
+		54998A1721B5F39A00BA7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54998A1C21B5F39A00BA7051 /* Fac IngUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fac IngUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54998A2021B5F39A00BA7051 /* Fac_IngUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fac_IngUITests.swift; sourceTree = "<group>"; };
+		54998A2221B5F39A00BA7051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54998A2E21B5F46900BA7051 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		54998A3021B736EA00BA7051 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
+		54998A3221B73CD400BA7051 /* RecursoSeleccionado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursoSeleccionado.swift; sourceTree = "<group>"; };
+		54998A3421B84F0B00BA7051 /* FooTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTableViewCell.swift; sourceTree = "<group>"; };
+		54998A3621B85B7C00BA7051 /* Facultad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facultad.swift; sourceTree = "<group>"; };
+		54BB9F5921F142D300A9A1B4 /* SeleccionFac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionFac.swift; sourceTree = "<group>"; };
+		54CD174D21E485B3009E9997 /* CollectionEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEvents.swift; sourceTree = "<group>"; };
+		54D35E9D21EBC82200B32ECE /* HightLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightLights.swift; sourceTree = "<group>"; };
+		54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDirecto.swift; sourceTree = "<group>"; };
+		54D4AAEE21EF9A190028CD21 /* pol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pol.html; sourceTree = SOURCE_ROOT; };
+		54D4AAF021EFC2AF0028CD21 /* WebThor3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor3.swift; sourceTree = "<group>"; };
+		54DFEAC221D7EF7700AFCF22 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		54F0539521D2FFEA0053638A /* Fac Ing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fac Ing.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		549989FA21B5F39600BA7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A0E21B5F39A00BA7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A1921B5F39A00BA7051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		549989F421B5F39600BA7051 = {
+			isa = PBXGroup;
+			children = (
+				549989FF21B5F39600BA7051 /* Fac Ing */,
+				54998A1421B5F39A00BA7051 /* Fac IngTests */,
+				54998A1F21B5F39A00BA7051 /* Fac IngUITests */,
+				549989FE21B5F39600BA7051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		549989FE21B5F39600BA7051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				549989FD21B5F39600BA7051 /* Fac Ing.app */,
+				54998A1121B5F39A00BA7051 /* Fac IngTests.xctest */,
+				54998A1C21B5F39A00BA7051 /* Fac IngUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		549989FF21B5F39600BA7051 /* Fac Ing */ = {
+			isa = PBXGroup;
+			children = (
+				54998A0021B5F39600BA7051 /* AppDelegate.swift */,
+				54F0539521D2FFEA0053638A /* Fac Ing.entitlements */,
+				54998A0421B5F39600BA7051 /* Main.storyboard */,
+				54BB9F5921F142D300A9A1B4 /* SeleccionFac.swift */,
+				5447200B21D2F1780082A157 /* WebSIAE.swift */,
+				54546BEE21E57FD2003540D2 /* WebThor.swift */,
+				541F103721EC591100F62B09 /* WebThor2.swift */,
+				54D4AAF021EFC2AF0028CD21 /* WebThor3.swift */,
+				54CD174D21E485B3009E9997 /* CollectionEvents.swift */,
+				54DFEAC221D7EF7700AFCF22 /* Setup.swift */,
+				540A3E6921C1D1100090B4D8 /* ConsultarAsesoria.swift */,
+				540A3E6B21C1D5F80090B4D8 /* pickerDay.swift */,
+				54998A3021B736EA00BA7051 /* Calendario.swift */,
+				5467906621BB1314004D43F2 /* DateCell.swift */,
+				544E764121B991D4002F8A3A /* CollectionViewCell.swift */,
+				54998A3621B85B7C00BA7051 /* Facultad.swift */,
+				5412D2D021F7CB0A0070744C /* Divisiones.swift */,
+				5412D2D221F7CB260070744C /* CeldaDivision.swift */,
+				54998A2E21B5F46900BA7051 /* Resources.swift */,
+				5412D2CE21F790100070744C /* Carreras.swift */,
+				5484BAB721FC9E0E0037A05F /* degree.swift */,
+				54D35E9D21EBC82200B32ECE /* HightLights.swift */,
+				54998A3221B73CD400BA7051 /* RecursoSeleccionado.swift */,
+				54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */,
+				541F103521EC053600F62B09 /* PDF.swift */,
+				54998A0921B5F39A00BA7051 /* LaunchScreen.storyboard */,
+				54998A0C21B5F39A00BA7051 /* Info.plist */,
+				54D4AAEE21EF9A190028CD21 /* pol.html */,
+				54998A3421B84F0B00BA7051 /* FooTableViewCell.swift */,
+				54998A0721B5F39A00BA7051 /* Assets.xcassets */,
+				5467904921BB111F004D43F2 /* CalendarEnums.swift */,
+				544AF5A221EF796B00D715A0 /* local.html */,
+				5467904821BB111E004D43F2 /* CalendarStructs.swift */,
+				5467904421BB111E004D43F2 /* GlobalFunctionsAndExtensions.swift */,
+				5467904121BB111E004D43F2 /* Info-iOS.plist */,
+				5467905221BB1120004D43F2 /* Info-tvOS.plist */,
+				5467904721BB111E004D43F2 /* InternalActionFunctions.swift */,
+				5467904C21BB111F004D43F2 /* InternalQueryFunctions.swift */,
+				5467904A21BB111F004D43F2 /* JTAppleCalendar.h */,
+				5467904221BB111E004D43F2 /* JTAppleCalendarDelegateProtocol.swift */,
+				5467905121BB111F004D43F2 /* JTAppleCalendarLayout.swift */,
+				5467904D21BB111F004D43F2 /* JTAppleCalendarLayoutProtocol.swift */,
+				5467904621BB111E004D43F2 /* JTAppleCalendarVariables.swift */,
+				5467904521BB111E004D43F2 /* JTAppleCalendarView.swift */,
+				5467904F21BB111F004D43F2 /* JTAppleCell.swift */,
+				5467904E21BB111F004D43F2 /* JTAppleCollectionReusableView.swift */,
+				5467905021BB111F004D43F2 /* JTCalendarProtocols.swift */,
+				5467904B21BB111F004D43F2 /* UICollectionViewDelegates.swift */,
+				5467904321BB111E004D43F2 /* UIScrollViewDelegates.swift */,
+				5467905321BB1120004D43F2 /* UserInteractionFunctions.swift */,
+			);
+			path = "Fac Ing";
+			sourceTree = "<group>";
+		};
+		54998A1421B5F39A00BA7051 /* Fac IngTests */ = {
+			isa = PBXGroup;
+			children = (
+				54998A1521B5F39A00BA7051 /* Fac_IngTests.swift */,
+				54998A1721B5F39A00BA7051 /* Info.plist */,
+			);
+			path = "Fac IngTests";
+			sourceTree = "<group>";
+		};
+		54998A1F21B5F39A00BA7051 /* Fac IngUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54998A2021B5F39A00BA7051 /* Fac_IngUITests.swift */,
+				54998A2221B5F39A00BA7051 /* Info.plist */,
+			);
+			path = "Fac IngUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		549989FC21B5F39600BA7051 /* Fac Ing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54998A2521B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac Ing" */;
+			buildPhases = (
+				549989F921B5F39600BA7051 /* Sources */,
+				549989FA21B5F39600BA7051 /* Frameworks */,
+				549989FB21B5F39600BA7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fac Ing";
+			productName = "Fac Ing";
+			productReference = 549989FD21B5F39600BA7051 /* Fac Ing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54998A1021B5F39A00BA7051 /* Fac IngTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54998A2821B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac IngTests" */;
+			buildPhases = (
+				54998A0D21B5F39A00BA7051 /* Sources */,
+				54998A0E21B5F39A00BA7051 /* Frameworks */,
+				54998A0F21B5F39A00BA7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54998A1321B5F39A00BA7051 /* PBXTargetDependency */,
+			);
+			name = "Fac IngTests";
+			productName = "Fac IngTests";
+			productReference = 54998A1121B5F39A00BA7051 /* Fac IngTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54998A1B21B5F39A00BA7051 /* Fac IngUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54998A2B21B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac IngUITests" */;
+			buildPhases = (
+				54998A1821B5F39A00BA7051 /* Sources */,
+				54998A1921B5F39A00BA7051 /* Frameworks */,
+				54998A1A21B5F39A00BA7051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54998A1E21B5F39A00BA7051 /* PBXTargetDependency */,
+			);
+			name = "Fac IngUITests";
+			productName = "Fac IngUITests";
+			productReference = 54998A1C21B5F39A00BA7051 /* Fac IngUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		549989F521B5F39600BA7051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = SamArtGS;
+				TargetAttributes = {
+					549989FC21B5F39600BA7051 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+					54998A1021B5F39A00BA7051 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 549989FC21B5F39600BA7051;
+					};
+					54998A1B21B5F39A00BA7051 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 549989FC21B5F39600BA7051;
+					};
+				};
+			};
+			buildConfigurationList = 549989F821B5F39600BA7051 /* Build configuration list for PBXProject "Fac Ing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 549989F421B5F39600BA7051;
+			productRefGroup = 549989FE21B5F39600BA7051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				549989FC21B5F39600BA7051 /* Fac Ing */,
+				54998A1021B5F39A00BA7051 /* Fac IngTests */,
+				54998A1B21B5F39A00BA7051 /* Fac IngUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		549989FB21B5F39600BA7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5467905421BB1120004D43F2 /* Info-iOS.plist in Resources */,
+				5467906421BB1120004D43F2 /* Info-tvOS.plist in Resources */,
+				54998A0B21B5F39A00BA7051 /* LaunchScreen.storyboard in Resources */,
+				54D4AAEF21EF9A190028CD21 /* pol.html in Resources */,
+				54998A0821B5F39A00BA7051 /* Assets.xcassets in Resources */,
+				544AF5A321EF796B00D715A0 /* local.html in Resources */,
+				54998A0621B5F39600BA7051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A0F21B5F39A00BA7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A1A21B5F39A00BA7051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		549989F921B5F39600BA7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540A3E6A21C1D1100090B4D8 /* ConsultarAsesoria.swift in Sources */,
+				54998A3521B84F0C00BA7051 /* FooTableViewCell.swift in Sources */,
+				5467905B21BB1120004D43F2 /* CalendarStructs.swift in Sources */,
+				5467905D21BB1120004D43F2 /* UICollectionViewDelegates.swift in Sources */,
+				54546BEF21E57FD2003540D2 /* WebThor.swift in Sources */,
+				5467905E21BB1120004D43F2 /* InternalQueryFunctions.swift in Sources */,
+				5412D2D321F7CB260070744C /* CeldaDivision.swift in Sources */,
+				541F103821EC591100F62B09 /* WebThor2.swift in Sources */,
+				54DFEAC321D7EF7700AFCF22 /* Setup.swift in Sources */,
+				54998A2F21B5F46900BA7051 /* Resources.swift in Sources */,
+				5467906721BB1314004D43F2 /* DateCell.swift in Sources */,
+				54CD174E21E485B3009E9997 /* CollectionEvents.swift in Sources */,
+				544E764221B991D4002F8A3A /* CollectionViewCell.swift in Sources */,
+				54D35E9E21EBC82200B32ECE /* HightLights.swift in Sources */,
+				5467906021BB1120004D43F2 /* JTAppleCollectionReusableView.swift in Sources */,
+				54998A3121B736EA00BA7051 /* Calendario.swift in Sources */,
+				5467905521BB1120004D43F2 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				540A3E6C21C1D5F80090B4D8 /* pickerDay.swift in Sources */,
+				5467906221BB1120004D43F2 /* JTCalendarProtocols.swift in Sources */,
+				5467905921BB1120004D43F2 /* JTAppleCalendarVariables.swift in Sources */,
+				5467905F21BB1120004D43F2 /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				541F103621EC053600F62B09 /* PDF.swift in Sources */,
+				54998A0121B5F39600BA7051 /* AppDelegate.swift in Sources */,
+				5467905721BB1120004D43F2 /* GlobalFunctionsAndExtensions.swift in Sources */,
+				5467905A21BB1120004D43F2 /* InternalActionFunctions.swift in Sources */,
+				54998A3321B73CD400BA7051 /* RecursoSeleccionado.swift in Sources */,
+				5412D2CF21F790100070744C /* Carreras.swift in Sources */,
+				5484BAB821FC9E0E0037A05F /* degree.swift in Sources */,
+				54998A3721B85B7C00BA7051 /* Facultad.swift in Sources */,
+				54D4AAED21EF91160028CD21 /* PDFDirecto.swift in Sources */,
+				5467906321BB1120004D43F2 /* JTAppleCalendarLayout.swift in Sources */,
+				5467905C21BB1120004D43F2 /* CalendarEnums.swift in Sources */,
+				5467906121BB1120004D43F2 /* JTAppleCell.swift in Sources */,
+				5447200C21D2F1780082A157 /* WebSIAE.swift in Sources */,
+				5467905621BB1120004D43F2 /* UIScrollViewDelegates.swift in Sources */,
+				54BB9F5A21F142D300A9A1B4 /* SeleccionFac.swift in Sources */,
+				5467905821BB1120004D43F2 /* JTAppleCalendarView.swift in Sources */,
+				5467906521BB1120004D43F2 /* UserInteractionFunctions.swift in Sources */,
+				5412D2D121F7CB0A0070744C /* Divisiones.swift in Sources */,
+				54D4AAF121EFC2AF0028CD21 /* WebThor3.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A0D21B5F39A00BA7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54998A1621B5F39A00BA7051 /* Fac_IngTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54998A1821B5F39A00BA7051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54998A2121B5F39A00BA7051 /* Fac_IngUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54998A1321B5F39A00BA7051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 549989FC21B5F39600BA7051 /* Fac Ing */;
+			targetProxy = 54998A1221B5F39A00BA7051 /* PBXContainerItemProxy */;
+		};
+		54998A1E21B5F39A00BA7051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 549989FC21B5F39600BA7051 /* Fac Ing */;
+			targetProxy = 54998A1D21B5F39A00BA7051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54998A0421B5F39600BA7051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54998A0521B5F39600BA7051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54998A0921B5F39A00BA7051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54998A0A21B5F39A00BA7051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54998A2321B5F39A00BA7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54998A2421B5F39A00BA7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54998A2621B5F39A00BA7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac Ing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-Ing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54998A2721B5F39A00BA7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac Ing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-Ing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54998A2921B5F39A00BA7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac IngTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-IngTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fac Ing.app/Fac Ing";
+			};
+			name = Debug;
+		};
+		54998A2A21B5F39A00BA7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac IngTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-IngTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fac Ing.app/Fac Ing";
+			};
+			name = Release;
+		};
+		54998A2C21B5F39A00BA7051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac IngUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-IngUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fac Ing";
+			};
+			name = Debug;
+		};
+		54998A2D21B5F39A00BA7051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FDTCRD4BVY;
+				INFOPLIST_FILE = "Fac IngUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SamArtGS.Fac-IngUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fac Ing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		549989F821B5F39600BA7051 /* Build configuration list for PBXProject "Fac Ing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54998A2321B5F39A00BA7051 /* Debug */,
+				54998A2421B5F39A00BA7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54998A2521B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac Ing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54998A2621B5F39A00BA7051 /* Debug */,
+				54998A2721B5F39A00BA7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54998A2821B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac IngTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54998A2921B5F39A00BA7051 /* Debug */,
+				54998A2A21B5F39A00BA7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54998A2B21B5F39A00BA7051 /* Build configuration list for PBXNativeTarget "Fac IngUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54998A2C21B5F39A00BA7051 /* Debug */,
+				54998A2D21B5F39A00BA7051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 549989F521B5F39600BA7051 /* Project object */;
+}
