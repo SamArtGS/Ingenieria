@@ -14,10 +14,19 @@
 		5412D2D321F7CB260070744C /* CeldaDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412D2D221F7CB260070744C /* CeldaDivision.swift */; };
 		541F103621EC053600F62B09 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F103521EC053600F62B09 /* PDF.swift */; };
 		541F103821EC591100F62B09 /* WebThor2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F103721EC591100F62B09 /* WebThor2.swift */; };
+		542F86A7220FA9DD00729A82 /* Asesoria.html in Resources */ = {isa = PBXBuildFile; fileRef = 542F86A6220FA9DD00729A82 /* Asesoria.html */; };
+		542F86A9220FE16400729A82 /* croquis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 542F86A8220FE16400729A82 /* croquis.pdf */; };
+		542F86AB220FE16A00729A82 /* guia.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 542F86AA220FE16A00729A82 /* guia.pdf */; };
+		542F86AE221064DB00729A82 /* GaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542F86AD221064DB00729A82 /* GaleriaViewController.swift */; };
+		5431680D2219CDD2006CFEA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431680C2219CDD2006CFEA8 /* TableViewCell.swift */; };
+		543AE2F02210C6A500A11D63 /* Biblioteca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AE2EF2210C6A500A11D63 /* Biblioteca.swift */; };
 		5447200C21D2F1780082A157 /* WebSIAE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5447200B21D2F1780082A157 /* WebSIAE.swift */; };
-		544AF5A321EF796B00D715A0 /* local.html in Resources */ = {isa = PBXBuildFile; fileRef = 544AF5A221EF796B00D715A0 /* local.html */; };
 		544E764221B991D4002F8A3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544E764121B991D4002F8A3A /* CollectionViewCell.swift */; };
 		54546BEF21E57FD2003540D2 /* WebThor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54546BEE21E57FD2003540D2 /* WebThor.swift */; };
+		545F76E822130D9400400486 /* taller.html in Resources */ = {isa = PBXBuildFile; fileRef = 545F76E722130D9400400486 /* taller.html */; };
+		545F76EC22131C3400400486 /* proteccion.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 545F76EB22131C3400400486 /* proteccion.pdf */; };
+		545F76EE22132AD700400486 /* BibAudEsculAsocia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F76ED22132AD700400486 /* BibAudEsculAsocia.swift */; };
+		545F76F02213D51500400486 /* LabYTitulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F76EF2213D51500400486 /* LabYTitulViewController.swift */; };
 		5467905421BB1120004D43F2 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5467904121BB111E004D43F2 /* Info-iOS.plist */; };
 		5467905521BB1120004D43F2 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904221BB111E004D43F2 /* JTAppleCalendarDelegateProtocol.swift */; };
 		5467905621BB1120004D43F2 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467904321BB111E004D43F2 /* UIScrollViewDelegates.swift */; };
@@ -53,7 +62,6 @@
 		54CD174E21E485B3009E9997 /* CollectionEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CD174D21E485B3009E9997 /* CollectionEvents.swift */; };
 		54D35E9E21EBC82200B32ECE /* HightLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D35E9D21EBC82200B32ECE /* HightLights.swift */; };
 		54D4AAED21EF91160028CD21 /* PDFDirecto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */; };
-		54D4AAEF21EF9A190028CD21 /* pol.html in Resources */ = {isa = PBXBuildFile; fileRef = 54D4AAEE21EF9A190028CD21 /* pol.html */; };
 		54D4AAF121EFC2AF0028CD21 /* WebThor3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4AAF021EFC2AF0028CD21 /* WebThor3.swift */; };
 		54DFEAC321D7EF7700AFCF22 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFEAC221D7EF7700AFCF22 /* Setup.swift */; };
 /* End PBXBuildFile section */
@@ -83,10 +91,19 @@
 		5412D2D221F7CB260070744C /* CeldaDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDivision.swift; sourceTree = "<group>"; };
 		541F103521EC053600F62B09 /* PDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
 		541F103721EC591100F62B09 /* WebThor2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor2.swift; sourceTree = "<group>"; };
+		542F86A6220FA9DD00729A82 /* Asesoria.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Asesoria.html; sourceTree = "<group>"; };
+		542F86A8220FE16400729A82 /* croquis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = croquis.pdf; sourceTree = "<group>"; };
+		542F86AA220FE16A00729A82 /* guia.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = guia.pdf; sourceTree = "<group>"; };
+		542F86AD221064DB00729A82 /* GaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriaViewController.swift; sourceTree = "<group>"; };
+		5431680C2219CDD2006CFEA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		543AE2EF2210C6A500A11D63 /* Biblioteca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biblioteca.swift; sourceTree = "<group>"; };
 		5447200B21D2F1780082A157 /* WebSIAE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSIAE.swift; sourceTree = "<group>"; };
-		544AF5A221EF796B00D715A0 /* local.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = local.html; sourceTree = SOURCE_ROOT; };
 		544E764121B991D4002F8A3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		54546BEE21E57FD2003540D2 /* WebThor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor.swift; sourceTree = "<group>"; };
+		545F76E722130D9400400486 /* taller.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = taller.html; sourceTree = "<group>"; };
+		545F76EB22131C3400400486 /* proteccion.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = proteccion.pdf; sourceTree = "<group>"; };
+		545F76ED22132AD700400486 /* BibAudEsculAsocia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibAudEsculAsocia.swift; sourceTree = "<group>"; };
+		545F76EF2213D51500400486 /* LabYTitulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabYTitulViewController.swift; sourceTree = "<group>"; };
 		5467904121BB111E004D43F2 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		5467904221BB111E004D43F2 /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
 		5467904321BB111E004D43F2 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegates.swift; sourceTree = "<group>"; };
@@ -129,7 +146,6 @@
 		54CD174D21E485B3009E9997 /* CollectionEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEvents.swift; sourceTree = "<group>"; };
 		54D35E9D21EBC82200B32ECE /* HightLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightLights.swift; sourceTree = "<group>"; };
 		54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDirecto.swift; sourceTree = "<group>"; };
-		54D4AAEE21EF9A190028CD21 /* pol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pol.html; sourceTree = SOURCE_ROOT; };
 		54D4AAF021EFC2AF0028CD21 /* WebThor3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThor3.swift; sourceTree = "<group>"; };
 		54DFEAC221D7EF7700AFCF22 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
 		54F0539521D2FFEA0053638A /* Fac Ing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fac Ing.entitlements"; sourceTree = "<group>"; };
@@ -160,6 +176,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542F86AC220FEE0D00729A82 /* pdfs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pdfs;
+			sourceTree = "<group>";
+		};
 		549989F421B5F39600BA7051 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +209,11 @@
 				54998A0021B5F39600BA7051 /* AppDelegate.swift */,
 				54F0539521D2FFEA0053638A /* Fac Ing.entitlements */,
 				54998A0421B5F39600BA7051 /* Main.storyboard */,
+				545F76EF2213D51500400486 /* LabYTitulViewController.swift */,
+				545F76ED22132AD700400486 /* BibAudEsculAsocia.swift */,
+				54998A3621B85B7C00BA7051 /* Facultad.swift */,
+				543AE2EF2210C6A500A11D63 /* Biblioteca.swift */,
+				542F86AD221064DB00729A82 /* GaleriaViewController.swift */,
 				54BB9F5921F142D300A9A1B4 /* SeleccionFac.swift */,
 				5447200B21D2F1780082A157 /* WebSIAE.swift */,
 				54546BEE21E57FD2003540D2 /* WebThor.swift */,
@@ -198,24 +226,28 @@
 				54998A3021B736EA00BA7051 /* Calendario.swift */,
 				5467906621BB1314004D43F2 /* DateCell.swift */,
 				544E764121B991D4002F8A3A /* CollectionViewCell.swift */,
-				54998A3621B85B7C00BA7051 /* Facultad.swift */,
 				5412D2D021F7CB0A0070744C /* Divisiones.swift */,
 				5412D2D221F7CB260070744C /* CeldaDivision.swift */,
 				54998A2E21B5F46900BA7051 /* Resources.swift */,
+				54998A3221B73CD400BA7051 /* RecursoSeleccionado.swift */,
+				5431680C2219CDD2006CFEA8 /* TableViewCell.swift */,
+				541F103521EC053600F62B09 /* PDF.swift */,
 				5412D2CE21F790100070744C /* Carreras.swift */,
 				5484BAB721FC9E0E0037A05F /* degree.swift */,
 				54D35E9D21EBC82200B32ECE /* HightLights.swift */,
-				54998A3221B73CD400BA7051 /* RecursoSeleccionado.swift */,
 				54D4AAEC21EF91160028CD21 /* PDFDirecto.swift */,
-				541F103521EC053600F62B09 /* PDF.swift */,
+				545F76E722130D9400400486 /* taller.html */,
+				542F86AA220FE16A00729A82 /* guia.pdf */,
+				542F86A8220FE16400729A82 /* croquis.pdf */,
+				542F86AC220FEE0D00729A82 /* pdfs */,
 				54998A0921B5F39A00BA7051 /* LaunchScreen.storyboard */,
 				54998A0C21B5F39A00BA7051 /* Info.plist */,
-				54D4AAEE21EF9A190028CD21 /* pol.html */,
 				54998A3421B84F0B00BA7051 /* FooTableViewCell.swift */,
 				54998A0721B5F39A00BA7051 /* Assets.xcassets */,
 				5467904921BB111F004D43F2 /* CalendarEnums.swift */,
-				544AF5A221EF796B00D715A0 /* local.html */,
+				542F86A6220FA9DD00729A82 /* Asesoria.html */,
 				5467904821BB111E004D43F2 /* CalendarStructs.swift */,
+				545F76EB22131C3400400486 /* proteccion.pdf */,
 				5467904421BB111E004D43F2 /* GlobalFunctionsAndExtensions.swift */,
 				5467904121BB111E004D43F2 /* Info-iOS.plist */,
 				5467905221BB1120004D43F2 /* Info-tvOS.plist */,
@@ -367,13 +399,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545F76E822130D9400400486 /* taller.html in Resources */,
 				5467905421BB1120004D43F2 /* Info-iOS.plist in Resources */,
 				5467906421BB1120004D43F2 /* Info-tvOS.plist in Resources */,
 				54998A0B21B5F39A00BA7051 /* LaunchScreen.storyboard in Resources */,
-				54D4AAEF21EF9A190028CD21 /* pol.html in Resources */,
+				542F86A9220FE16400729A82 /* croquis.pdf in Resources */,
+				542F86AB220FE16A00729A82 /* guia.pdf in Resources */,
 				54998A0821B5F39A00BA7051 /* Assets.xcassets in Resources */,
-				544AF5A321EF796B00D715A0 /* local.html in Resources */,
 				54998A0621B5F39600BA7051 /* Main.storyboard in Resources */,
+				545F76EC22131C3400400486 /* proteccion.pdf in Resources */,
+				542F86A7220FA9DD00729A82 /* Asesoria.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +438,7 @@
 				5467905B21BB1120004D43F2 /* CalendarStructs.swift in Sources */,
 				5467905D21BB1120004D43F2 /* UICollectionViewDelegates.swift in Sources */,
 				54546BEF21E57FD2003540D2 /* WebThor.swift in Sources */,
+				545F76F02213D51500400486 /* LabYTitulViewController.swift in Sources */,
 				5467905E21BB1120004D43F2 /* InternalQueryFunctions.swift in Sources */,
 				5412D2D321F7CB260070744C /* CeldaDivision.swift in Sources */,
 				541F103821EC591100F62B09 /* WebThor2.swift in Sources */,
@@ -416,15 +452,19 @@
 				54998A3121B736EA00BA7051 /* Calendario.swift in Sources */,
 				5467905521BB1120004D43F2 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
 				540A3E6C21C1D5F80090B4D8 /* pickerDay.swift in Sources */,
+				545F76EE22132AD700400486 /* BibAudEsculAsocia.swift in Sources */,
 				5467906221BB1120004D43F2 /* JTCalendarProtocols.swift in Sources */,
 				5467905921BB1120004D43F2 /* JTAppleCalendarVariables.swift in Sources */,
 				5467905F21BB1120004D43F2 /* JTAppleCalendarLayoutProtocol.swift in Sources */,
 				541F103621EC053600F62B09 /* PDF.swift in Sources */,
 				54998A0121B5F39600BA7051 /* AppDelegate.swift in Sources */,
+				543AE2F02210C6A500A11D63 /* Biblioteca.swift in Sources */,
 				5467905721BB1120004D43F2 /* GlobalFunctionsAndExtensions.swift in Sources */,
 				5467905A21BB1120004D43F2 /* InternalActionFunctions.swift in Sources */,
 				54998A3321B73CD400BA7051 /* RecursoSeleccionado.swift in Sources */,
 				5412D2CF21F790100070744C /* Carreras.swift in Sources */,
+				5431680D2219CDD2006CFEA8 /* TableViewCell.swift in Sources */,
+				542F86AE221064DB00729A82 /* GaleriaViewController.swift in Sources */,
 				5484BAB821FC9E0E0037A05F /* degree.swift in Sources */,
 				54998A3721B85B7C00BA7051 /* Facultad.swift in Sources */,
 				54D4AAED21EF91160028CD21 /* PDFDirecto.swift in Sources */,
@@ -615,7 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDTCRD4BVY;
 				INFOPLIST_FILE = "Fac Ing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -634,7 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDTCRD4BVY;
 				INFOPLIST_FILE = "Fac Ing/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

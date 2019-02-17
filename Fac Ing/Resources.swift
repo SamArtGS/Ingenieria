@@ -12,8 +12,8 @@ import UIKit
 class Resources: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     var selected:[String] = []
-    var contenidoCeldas = ["Serie de ejercicios","Asesorías","Taller de ejercicios","Reglamentos","Programa de asignaturas","Conferencias","Manual de prácticas","Exámenes pasados resueltos","Guía de reinscripción"]
-    var arregloImagenes = ["hw","aseso","taller","reglas","programa","keyn","pract","test","guia"]
+    var contenidoCeldas = ["Serie de ejercicios","Asesorías","Taller de ejercicios","Reglamentos","Programa de asignaturas (DCB)","Conferencias","Manual de prácticas","Exámenes pasados: Finales","Exámenes pasados: Extraordinarios","Guía escolar 2019-2","Web de profesores","Guía para protección"]
+    var arregloImagenes = ["hw","aseso","taller","reglas","programa","keyn","pract","test","test2","guia","webprofesor","protection"]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contenidoCeldas.count
     }
@@ -23,16 +23,18 @@ class Resources: UIViewController,UITableViewDelegate,UITableViewDataSource{
         celda.textLabel?.text = contenidoCeldas[indexPath.row]
         let image = UIImage(named: arregloImagenes[indexPath.row])
         celda.imageView!.image = image
-        celda.detailTextLabel?.font = UIFont(name:"Arial-Bold", size: 14.0)
-        celda.backgroundColor = .clear
+        automaticallyAdjustsScrollViewInsets = false
         return celda
+    }
+    override func viewWillAppear(_ animated: Bool) {
+         navigationController?.hidesBarsOnTap = false
     }
     func getTitlee(inter:Int) -> String {
         return contenidoCeldas[inter]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 8 {
+        if indexPath.row == 9 {
             PDFDirecto.GlobalVariable.myString = 0
             let viewTable = storyboard?.instantiateViewController(withIdentifier:"PDFDirecty")
             self.navigationController?.pushViewController(viewTable!, animated: true)
@@ -43,7 +45,23 @@ class Resources: UIViewController,UITableViewDelegate,UITableViewDataSource{
             let viewTable = storyboard?.instantiateViewController(withIdentifier:"PDFDirecty")
             self.navigationController?.pushViewController(viewTable!, animated: true)
             tableView.deselectRow(at: indexPath, animated: true)
-        };if indexPath.row != 8 && indexPath.row != 1 {
+        }
+        if indexPath.row == 2 {
+                PDFDirecto.GlobalVariable.myString = 3
+                let viewTable = storyboard?.instantiateViewController(withIdentifier:"PDFDirecty")
+                self.navigationController?.pushViewController(viewTable!, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+        }
+        if indexPath.row == 11 {
+            PDFDirecto.GlobalVariable.myString = 4
+            let viewTable = storyboard?.instantiateViewController(withIdentifier:"PDFDirecty")
+            self.navigationController?.pushViewController(viewTable!, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+        }
+        
+        if indexPath.row != 9 && indexPath.row != 1 && indexPath.row != 2 && indexPath.row != 11{
             self.performSegue(withIdentifier: "RecursoSelected", sender: [indexPath.row,0])
             tableView.deselectRow(at: indexPath, animated: true)
         }

@@ -43,6 +43,7 @@ extension JTAppleCalendarView {
         guard let targetCellFrame = calendarViewLayout.layoutAttributesForItem(at: indexPath)?.frame else { // Jt101 This was changed !!
             return nil
         }
+        //update scroll
         
         let theTargetContentOffset: CGFloat = scrollDirection == .horizontal ? targetCellFrame.origin.x : targetCellFrame.origin.y
         var fixedScrollSize: CGFloat = 0

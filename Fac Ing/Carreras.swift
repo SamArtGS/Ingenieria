@@ -9,39 +9,45 @@
 import UIKit
 
 class Carreras: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    var carreras:[String] = ["Ingeniería civil","Ingeniería geomática","Ingeniería ambiental","Ingeniería eléctrica electrónica","Ingeniería en computación","Ingeniería en telecomunicaciones","Ingeniería geológica","Ingeniería geofísica","Ingeniería petrolera","Ingeniería de minas y metalurgia","Ingeniería mecánica","Ingeniería industrial","Ingeniería mecatrónica","Ingeniería en sistemas biomédicos"]
-    var arregloImagenCarreras:[String] = ["civil","geomatica","ambiental","electrica","computacion","telecomunicaciones","geologica","geofisica","petrolera","minas","mecanica","industrial","mecatronica","sistemasmedicos"]
+    var seleccionesss:[[Int]] = [[0,1],[2,3,4],[5,6,7,8,9],[10,11,12,13]]
+    let seccciones:[String] = ["División de Ing. Civil y Geomática","División de Ing. Eléctrica","División de Ing. en C. de la Tierra","División de Ing. Mecánica e Industrial"]
+    let images:[[String]] = [["civil","geomatica"],["computacion","electrica","telecomunicaciones"],["geofisica","geologica","minas","petrolera","ambiental"],["mecanica","industrial","mecatronica","sistemasmedicos"]]
+    let config:[[String]] = [["Ingeniería Civil","Ingeniería Geomática"],["Ingeniería en Computación","Ingeniería Eléctrica Electrónica","Ingeniería en Telecomunicaciones"],["Ingeniería Geofísica","Ingeniería Geológica","Ingeniería en Minas y Metalurgia","Ingeniería Petrolera","Ingeniería Ambiental"],["Ingeniería Mecánica","Ingeniería Industrial","Ingeniería Mecatrónica","Ingeniería en Sistemas Biomédicos"]]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return carreras.count
+        return config[section].count
     }
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return seccciones.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return seccciones[section]
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style:UITableViewCell.CellStyle.default,reuseIdentifier:"ejem")
-        cell.textLabel?.text = carreras[indexPath.row]
-        let image = UIImage(named: arregloImagenCarreras[indexPath.row])
+        let image = UIImage(named: images[indexPath.section][indexPath.row])
         cell.imageView!.image = image
+        cell.textLabel?.text = config[indexPath.section][indexPath.row]
         return cell
+        
     }
+    var seled:[Int] = []
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewTable = storyboard?.instantiateViewController(withIdentifier:"Papa")
-        self.navigationController?.pushViewController(viewTable!, animated: true)
+        self.performSegue(withIdentifier: "carrera", sender: [seleccionesss[indexPath.section][indexPath.row],indexPath.section])
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
     override func viewDidLoad() {
+        self.navigationController?.hidesBarsOnTap = false
+        let orientationValue = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(orientationValue, forKey: "orientation")
+        automaticallyAdjustsScrollViewInsets = false
         super.viewDidLoad()
 
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "carrera"{
+            (segue.destination as! degree).selectedd = sender as? [Int]
+        }
     }
-    */
 
 }

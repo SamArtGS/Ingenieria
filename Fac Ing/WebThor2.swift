@@ -9,7 +9,8 @@
 import UIKit
 
 class WebThor2: UIViewController,UIWebViewDelegate{
-    /*func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        if(error._code == NSURLErrorNotConnectedToInternet){
         let viewTable = storyboard?.instantiateViewController(withIdentifier:"Facultad")
         self.navigationController?.pushViewController(viewTable!, animated: true)
         
@@ -18,11 +19,13 @@ class WebThor2: UIViewController,UIWebViewDelegate{
             
         })
         self.present(alert, animated: true)
+        }
         
-    }*/
+    }
 
     @IBOutlet var web: UIWebView!
     override func viewDidLoad() {
+        automaticallyAdjustsScrollViewInsets = false
         web.delegate = self
         super.viewDidLoad()
         let urs = URL(string: "http://www.ingenieria.unam.mx")

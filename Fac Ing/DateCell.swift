@@ -11,4 +11,6 @@ import UIKit
 class DateCell: JTAppleCell {
     @IBOutlet var DateLab: UILabel!
     @IBOutlet var color: UIView!
+    var Selected:Bool = false
+    var concepto:String = ""
 }

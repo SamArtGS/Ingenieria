@@ -11,19 +11,19 @@ import UIKit
 class PDF: UIViewController,UIWebViewDelegate{
     var opcionselected:[Int]?
     var PDFSeries:[String] = [
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA1.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA2.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA3.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA4.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA5.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-1/TEMA6.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA1.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA2.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA3.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA4.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA5.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/series2019-2/TEMA6.pdf",
         /* Series de Álgebra */
         
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/s1.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/s2.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/s3.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/s4.pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/s5.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/Serie_1.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/Serie_2.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/Serie_3.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/Serie_4.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/series/Serie_5.pdf",
         /* Series  de Álgebra Lineal*/
         
         "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoDiferencial/documents/series/tema_2.pdf",
@@ -103,20 +103,20 @@ class PDF: UIViewController,UIWebViewDelegate{
         "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Documentos/Series/CUADERNO-EJERCICIOS-F.pdf",
         /* Serie de Ejercicios de física*/
         
-        "http://dcb.ingenieria.unam.mx/index.php/coordinaciones/fisica-quimica/fisica/fisica-experimental/",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Documentos/Series/CUADERNO-EJERCICIOS-FE.pdf",
         /* Serie de Ejercicios de Física Experimental */
         
         "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Documentos/Series/CUADERNO-EJERCICIOS-FF.pdf",
         /* Serie de ejercicios de fundamentos de física */
         
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_1(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_2(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_3(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_4(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_5(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_6(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_7(2019-1).pdf",
-        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_8(2019-1).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_1(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_2(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_3(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_4(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_5(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_6(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_7(2019-2).pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/series/Serie_8(2019-2).pdf",
         /* Serie de ejercicios de Química */
         
         "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/TEM/Series/serie1_STEM_y_FTEM.pdf",
@@ -179,11 +179,18 @@ class PDF: UIViewController,UIWebViewDelegate{
         "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoDiferencial/documents/planeacion/temario.pdf",
         "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoGeometriaAnalitica/documents/planeacion/temario.pdf",
         "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/GeometriaAnalitica/documents/planeacion/temario.pdf",
-        "",
-        "",
-        "",
-        
-        
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/planeacion/programa.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/planeacion/plan1321.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/MA/Documentos/Programa2016.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/AN/Documentos/temario2016.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Documentos/programa2016.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/EyM/Plan2006/TemarioEyM2006.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioF.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioFE.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioFF.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/temarios_asignatura/quimica%201216.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/TEM/Documentos/programaAsignatura.pdf",
+        "http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Termodinamica/materias/sistemastermo/programa_asignatura.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/CyD/Documentos/cinematica_y_dinamica2016.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/E/Documentos/Estatica2016.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Documentos/Temario_P.pdf",
+        "http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Documentos/Temario_E.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/Documentos/Mecanica2016.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/D/Documentos/TemarioD.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Documentos/Temario_FE.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Documentos/Temario_PyE.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioAyO2016.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/EyO/Documentos/TemarioEMO.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioFM.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioFO.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioBF.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Termodinamica/materias/termo2015/programa_asignatura.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/Temarios/TemarioIFES.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/TEM/Documentos/programaAsignatura.pdf"
         ]
     
     @IBOutlet var Indicador: UIActivityIndicatorView!
@@ -196,18 +203,19 @@ class PDF: UIViewController,UIWebViewDelegate{
         "http://dcb.ingenieria.unam.mx/wp-content/uploads/Documentos/NoFumadores.pdf",
         "http://servacad.ingenieria.unam.mx/_adicionales/titulacion/Reglamento_Opciones_de_Titulacion.pdf",
         "http://servacad.ingenieria.unam.mx/_adicionales/titulacion/Instructivo_Examen.pdf",
-        "http://servacad.ingenieria.unam.mx/_adicionales/titulacion/Instructivo_Ceremonia.pdf",
-        "",
-        "",
-        "",
-        ""
-        ]
-    var PDFConferencias:[String] = [""]
+        "http://servacad.ingenieria.unam.mx/_adicionales/titulacion/Instructivo_Ceremonia.pdf"]
+    var PDFConferencias:[String] = ["http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5027.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5036.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5029.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5035.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5032.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5033.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5030.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5034.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5037.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5028.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5031.pdf"]
     
-    var PDFManuales:[String] = [""]
+    var PDFManuales:[String] = ["http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-10_AyO.pdf",""]
     var PDFExPasados:[String] = [""]
     var PDFGuias:[String] = [""]
     
+    
+    
+    
+    
+    
+    var PDFWebProfes:[String] = ["http://djasul.mex.tl/intro.html","http://profesores.dcb.unam.mx/users/isabelpaj/","https://unamfi.wixsite.com/mis-cursos-cam","http://andrew.cienciaseingenieria.mx/","http://profesores.dcb.unam.mx/users/alvarezga","http://profesores.dcb.unam.mx/users/yukihiro/prof/","http://profesores.dcb.unam.mx/users/miriamas/","http://profesores.dcb.unam.mx/users/enriqueas/","http://sites.google.com/site/materialserarz/","http://profesores.dcb.unam.mx/users/rocioan/","http://profesores.dcb.unam.mx/users/angellbs/","https://sites.google.com/site/princtermo/","https://sites.google.com/view/franciscobarrerar","http://profesores.dcb.unam.mx/users/violetabh/","http://profesores.dcb.unam.mx/users/aideebo/","http://profesores.dcb.unam.mx/users/hortenciacl","http://profesores.dcb.unam.mx/users/guillermocm/","http://profesores.dcb.unam.mx/users/erikcip/","http://profesores.dcb.unam.mx/users/franciscojcc/","http://profesores.dcb.unam.mx/users/juanccv/","http://profesores.dcb.unam.mx/users/miltonchg/","http://www.ingenieria.unam.mx/~aulaweb/","http://profesores.dcb.unam.mx/users/scarloscc","http://www.ccadet.unam.mx/secciones/depar/sub3/fopede/semb/MBMM.html","http://profesores.dcb.unam.mx/users/adrianaaes/","http://profesores.dcb.unam.mx/users/rauler/","http://www.esponda.org/","http://profesores.dcb.unam.mx/users/estherfc/","http://dimei.fi-b.unam.mx/~beta/algebra/","http://profesores.dcb.unam.mx/users/rigobertofz","http://profesores.dcb.unam.mx/users/rigelgl/","http://profesores.dcb.unam.mx/users/salvadorgb/","http://profesores.dcb.unam.mx/users/veronicahgc/","http://www.ingenieria.unam.mx/~colomepg/","http://profesores.dcb.unam.mx/users/joelg/","http://profesores.dcb.unam.mx/users/marcog/","http://profesores.dcb.unam.mx/users/miguelegc/","http://profesores.dcb.unam.mx/users/santiagogl/","http://profesores.dcb.unam.mx/users/ericagv/","http://profesores.dcb.unam.mx/users/rubenhr/","http://profesores.dcb.unam.mx/users/gabrieljm/","http://profesores.dcb.unam.mx/users/mariojv/","http://profesores.dcb.unam.mx/users/mayverenajp","http://profesores.dcb.unam.mx/users/normapla/","http://profesoramlc.wordpress.com/","http://profesores.dcb.unam.mx/users/adanlr/","http://edgar09.mex.tl/","http://profesores.dcb.unam.mx/users/margaritalc/","http://profesores.dcb.unam.mx/users/ericklr/Index.html","http://profesores.dcb.unam.mx/users/mariacms/","http://profesores.dcb.unam.mx/users/sarammm/","http://profesores.dcb.unam.mx/users/nayellimg/","http://www.paginaspersonales.unam.mx/academicos/datoscontacto/alias:raquelmartinez","http://profesores.dcb.unam.mx/users/abrahammb/","http://profesores.dcb.unam.mx/users/ricardomg","http://profesores.dcb.unam.mx/users/yukihiro/prof/","http://profesores.dcb.unam.mx/users/yukihiro/prof/","https://sites.google.com/site/cihectormg/home","http://profesores.fi-b.unam.mx/mozo/","http://profesores.dcb.unam.mx/users/juanoc/","http://profesores.dcb.unam.mx/users/mariagob/","http://profesores.dcb.unam.mx/users/arnulfoog/","http://profesores.dcb.unam.mx/users/jesusapr/","http://profesores.dcb.unam.mx/users/catarinofpl/","http://profesores.dcb.unam.mx/users/antoniapl/","http://profesores.dcb.unam.mx/users/analaur d apm/","http://zoonico.freehostia.com/","http://jaima.freehostia.com/moodle","http://profesores.dcb.unam.mx/users/aliciapr/","http://cozumel.fi-a.unam.mx/~pinilla/","http://profesores.dcb.unam.mx/users/adrianpe/","http://profesores.dcb.unam.mx/users/yukihiro/prof/","http://profesores.dcb.unam.mx/users/raulpm/","http://profesores.dcb.unam.mx/users/gloriarr/","http://www.paginaspersonales.unam.mx/acad/andresbasilioramirez/presentacions","http://profesores.fi-b.unam.mx/jareyc/","http://profesores.dcb.unam.mx/users/rosalbarch","http://profesores.dcb.unam.mx/users/mariaord/","http://profesores.dcb.unam.mx/users/cynthiarm/","http://profesores.dcb.unam.mx/users/dariorp/","http://profesores.dcb.unam.mx/users/alejandrort/","http://profesores.dcb.unam.mx/users/emilyerll/","http://profesores.dcb.unam.mx/users/jesuserm/","http://goo.gl/WUqQNq","http://www.jfsr.com.mx/","http://profesores.dcb.unam.mx/users/fernandos","http://profesores.dcb.unam.mx/users/mariasvss/","http://profesores.dcb.unam.mx/users/mariasvss/","http://profesores.dcb.unam.mx/users/yukihiro/prof/","http://www.paginaspersonales.unam.mx/academicos/datosContacto/alias:franciscoleonelsilva","http://profesores.dcb.unam.mx/users/rodolfosu/","http://profesores.dcb.unam.mx/users/luishss","http://www.ursularias.com/URSUL.htm","http://profesores.dcb.unam.mx/users/manueldjvg/","http://dcb.fi-c.unam.mx/profesores/irene/","https://sites.google.com/site/c354rvl/","http://www.ingenieria.unam.mx/~luiscvs/","http://profesores.dcb.unam.mx/users/juanvt","http://profesores.dcb.unam.mx/users/salvadorevp/","http://www.ingenieria.unam.mx/sistemas/semblanzas/AGWP.php"]
     func webViewDidStartLoad(_ webView: UIWebView){
         Indicador.startAnimating()
     }
@@ -216,6 +224,7 @@ class PDF: UIViewController,UIWebViewDelegate{
     }
     @IBOutlet var PDFView: UIWebView!
     override func viewDidLoad() {
+        self.navigationController?.hidesBarsOnTap = true
         PDFView.delegate = self
        Indicador.hidesWhenStopped = true
         navigationController?.navigationBar.barStyle = .black
@@ -225,40 +234,57 @@ class PDF: UIViewController,UIWebViewDelegate{
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 1:
             //let url : NSURL! = NSURL(string: PDFAsesoria[opcionselected![1]])
             super.viewDidLoad()
+            break
         case 2:
             let url : NSURL! = NSURL(string: PDFTallerEjercicios[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 3:
             let url : NSURL! = NSURL(string: PDFReglamentos[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 4:
             let url : NSURL! = NSURL(string: PDFPAsig[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 5:
             let url : NSURL! = NSURL(string: PDFConferencias[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 6:
             let url : NSURL! = NSURL(string: PDFManuales[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
+            break
         case 7:
             let url : NSURL! = NSURL(string: PDFExPasados[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+            break
         case 8:
             super.viewDidLoad()
+            break
+        case 9:
+            break
+        case 10:
+            guard let requestUrl = NSURL(string: PDFWebProfes[opcionselected![1]]) else {
+                return
+            }
+            
+            UIApplication.shared.openURL(requestUrl as URL)
         default:
             let alert = UIAlertController(title: "Error en la conexión", message: "Error", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
@@ -283,10 +309,23 @@ class PDF: UIViewController,UIWebViewDelegate{
         alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
             
         })
+        let viewTable = storyboard?.instantiateViewController(withIdentifier:"Regresar")
+        self.navigationController?.pushViewController(viewTable!, animated: true)
         self.present(alert, animated: true)
         
+        
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        AppDelegate.OrientationManager.landscapeSupported = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppDelegate.OrientationManager.landscapeSupported = false
+        //The code below will automatically rotate your device's orientation when you exit this ViewController
+        let orientationValue = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(orientationValue, forKey: "orientation")
+    }
 }
 extension UIViewController{
     func hidebar()->Bool {

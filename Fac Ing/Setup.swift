@@ -7,32 +7,102 @@
 //
 
 import UIKit
+import Foundation
+import MessageUI
 
-class Setup: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    let config:[String] = ["Acerca de la aplicación","","Sugerencias para el desarrollador","Página Oficial de la UNAM","Página Oficial de la Facultad de Ingeniería","La Gaceta UNAM","","","              Redes Sociales - FI","Facebook","Twitter","","Notificaciones","Mapa de la App"]
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return config.count
+class Setup: UIViewController,UITableViewDataSource,UITableViewDelegate,MFMailComposeViewControllerDelegate{
+    func sendEmail() {
+        let composeVC = MFMailComposeViewController()
+        composeVC.mailComposeDelegate = self
+        composeVC.setToRecipients(["samuelarturo@icloud.com"])
+        composeVC.setSubject("App Ingeniería - UNAM")
+        self.present(composeVC, animated: true, completion: nil)
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = UITableViewCell(style:UITableViewCell.CellStyle.default,reuseIdentifier:"Celulosa")
-        celda.textLabel?.text = config[indexPath.row]
-        return celda
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+        
+        
     }
+    let seccciones:[String] = ["   Desarrolladores","   Dudas y sugerencias","   Sitios web institucionales","   Redes Sociales UNAM","   Redes Sociales FI"]
+    let images:[[String]] = [["infor"],["email"],["Copia de _2634443","esc","gaceta"],["facebook","twitter"],["facebook","twitter"],["notificacion","mapaapp","version"]]
+    let config:[[String]] = [["Acerca de la aplicación"],["Email para el desarrollador"],["Página Oficial de la UNAM","Página Oficial de la Facultad de Ingeniería","Gaceta UNAM"],["Facebook","Twitter"],["Facebook","Twitter"]]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return config[section].count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return seccciones[section]
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return seccciones.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = UITableViewCell(style:UITableViewCell.CellStyle.default,reuseIdentifier:"Celulosa")
+            let image = UIImage(named: images[indexPath.section][indexPath.row])
+            cell.imageView!.image = image
+            cell.textLabel?.text = config[indexPath.section][indexPath.row]
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 && indexPath.row == 0{
+            sendEmail()
+        }
+        if indexPath.section == 0 && indexPath.row == 0{
+            print("Hola")
+        }
+        if indexPath.section == 2 && indexPath.row == 0{
+            guard let requestUrl = NSURL(string: "https://www.unam.mx") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        if indexPath.section == 2 && indexPath.row == 1{
+            guard let requestUrl = NSURL(string: "http://www.ingenieria.unam.mx") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+            
+        }
+        if indexPath.section == 2 && indexPath.row == 2{
+            guard let requestUrl = NSURL(string: "http://www.gaceta.unam.mx") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        if indexPath.section == 3 && indexPath.row == 0{
+            guard let requestUrl = NSURL(string: "https://www.facebook.com/UNAM.MX.Oficial/") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        if indexPath.section == 3 && indexPath.row == 1{
+            guard let requestUrl = NSURL(string: "https://twitter.com/UNAM_MX") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        if indexPath.section == 4 && indexPath.row == 0{
+            guard let requestUrl = NSURL(string: "https://www.facebook.com/fi.unam.mx/") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        if indexPath.section == 4 && indexPath.row == 1{
+            guard let requestUrl = NSURL(string: "https://twitter.com/FIUNAM_MX") else {
+                return
+            }
+            UIApplication.shared.openURL(requestUrl as URL)
+        }
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func viewDidLoad() {
+        automaticallyAdjustsScrollViewInsets = false
         super.viewDidLoad()
         navigationController?.navigationBar.barStyle = .black
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -11,6 +11,7 @@ import UIKit
 class WebThor:UIViewController,UIWebViewDelegate{
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        if(error._code == NSURLErrorNotConnectedToInternet){
         let viewTable = storyboard?.instantiateViewController(withIdentifier:"Facultad")
         self.navigationController?.pushViewController(viewTable!, animated: true)
         let alert = UIAlertController(title: "Error en la conexión", message: "Tienes que tener una red de datos móviles", preferredStyle: .alert)
@@ -18,13 +19,16 @@ class WebThor:UIViewController,UIWebViewDelegate{
             
         })
         self.present(alert, animated: true)
+        }
     }
     var link:String?
     @IBOutlet weak var ShowSIAE: UIWebView!
     override func viewDidLoad() {
+        automaticallyAdjustsScrollViewInsets = false
         ShowSIAE.delegate = self
         let urs = URL(string: "https://www.unam.mx")
-        let urlRequest = URLRequest(url: urs!)
+        var urlRequest = URLRequest(url: urs!)
+        urlRequest.cachePolicy = .returnCacheDataElseLoad
         ShowSIAE.loadRequest(urlRequest)
         super.viewDidLoad()
         navigationController?.navigationBar.barStyle = .black

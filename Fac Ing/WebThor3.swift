@@ -10,8 +10,9 @@ import UIKit
 
 class WebThor3: UIViewController,UIWebViewDelegate{
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
-        
-        let alert = UIAlertController(title: "Error en la conexión", message: "Tienes que tener una red de datos móviles", preferredStyle: .alert)
+        let message: String = error.localizedDescription
+
+        let alert = UIAlertController(title: "Error en la conexión", message: "Tienes que tener una red de datos móviles \(message)" , preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
             
         })
@@ -29,24 +30,15 @@ class WebThor3: UIViewController,UIWebViewDelegate{
     }
     @IBOutlet var WebView: UIWebView!
     override func viewDidLoad() {
+        automaticallyAdjustsScrollViewInsets = false
         Indicador.hidesWhenStopped = true
         super.viewDidLoad()
-        let urs = URL(string: "https://thor.fi-a.unam.mx/inscripciones/horarios/asignatura")
+        let urs = URL(string: "https://inscripciones.ingenieria.unam.mx/horarios.html")
         let urlRequest = URLRequest(url: urs!)
         WebView.loadRequest(urlRequest)
         super.viewDidLoad()
         navigationController?.navigationBar.barStyle = .black
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

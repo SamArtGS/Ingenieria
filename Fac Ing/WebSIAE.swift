@@ -32,6 +32,7 @@ class WebSIAE:UIViewController,UIWebViewDelegate{
     let link:String = "http://www.dgae-siae.unam.mx/www_gate.php"
     @IBOutlet weak var ShowSIAE: UIWebView!
     override func viewDidLoad() {
+        automaticallyAdjustsScrollViewInsets = false
         Indicador.hidesWhenStopped = true
         ShowSIAE.delegate = self
         let urs = URL(string: link)
