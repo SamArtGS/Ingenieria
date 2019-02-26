@@ -6,3 +6,4 @@ De parte de los desarrolladores (SAGS - JCC) agradecemos sus opiniones y esperam
 Próximamente vendrán nuevas características y la versión en Android (se encuentra en proceso).
 PRONTO: ACCESO SIN CONEXIÓN A DOCUMENTOS
 
+![](Like.png)
