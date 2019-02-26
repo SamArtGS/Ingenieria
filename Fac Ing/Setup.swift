@@ -26,8 +26,8 @@ class Setup: UIViewController,UITableViewDataSource,UITableViewDelegate,MFMailCo
         
     }
     let seccciones:[String] = ["   Desarrolladores","   Dudas y sugerencias","   Sitios web institucionales","   Redes Sociales UNAM","   Redes Sociales FI"]
-    let images:[[String]] = [["infor"],["email"],["Copia de _2634443","esc","gaceta"],["facebook","twitter"],["facebook","twitter"],["notificacion","mapaapp","version"]]
-    let config:[[String]] = [["Acerca de la aplicación"],["Email para el desarrollador"],["Página Oficial de la UNAM","Página Oficial de la Facultad de Ingeniería","Gaceta UNAM"],["Facebook","Twitter"],["Facebook","Twitter"]]
+    let images:[[String]] = [["infor","version"],["email"],["Copia de _2634443","esc","gaceta"],["facebook","twitter"],["facebook","twitter"],["notificacion","mapaapp","version"]]
+    let config:[[String]] = [["Acerca de la aplicación","Referencias"],["Email para el desarrollador"],["Página Oficial de la UNAM","Página Oficial de la FI","Gaceta UNAM"],["Facebook","Twitter"],["Facebook","Twitter"]]
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return config[section].count
     }
@@ -49,7 +49,15 @@ class Setup: UIViewController,UITableViewDataSource,UITableViewDelegate,MFMailCo
             sendEmail()
         }
         if indexPath.section == 0 && indexPath.row == 0{
-            print("Hola")
+            let viewTable = storyboard?.instantiateViewController(withIdentifier:"Informacion")
+            self.navigationController?.pushViewController(viewTable!, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+        if indexPath.section == 0 && indexPath.row == 1{
+            PDFDirecto.GlobalVariable.myString = 19
+            let viewTable = storyboard?.instantiateViewController(withIdentifier:"PDFDirecty")
+        self.navigationController?.pushViewController(viewTable!, animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
         if indexPath.section == 2 && indexPath.row == 0{
             guard let requestUrl = NSURL(string: "https://www.unam.mx") else {
@@ -98,11 +106,13 @@ class Setup: UIViewController,UITableViewDataSource,UITableViewDelegate,MFMailCo
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.hidesBarsOnTap = false
+        navigationController?.navigationBar.barStyle = .black
+    }
     override func viewDidLoad() {
         automaticallyAdjustsScrollViewInsets = false
         super.viewDidLoad()
-        navigationController?.navigationBar.barStyle = .black
     }
 
 }

@@ -1,0 +1,156 @@
+
+/* Class = "UILabel"; text = "S"; ObjectID = "1Rh-jD-9T6"; */
+"1Rh-jD-9T6.text" = "S";
+
+/* Class = "UILabel"; text = "D"; ObjectID = "1X8-Ke-VjN"; */
+"1X8-Ke-VjN.text" = "D";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2BA-wz-W84"; */
+"2BA-wz-W84.text" = "Label";
+
+/* Class = "UIViewController"; title = "TitleNLabo"; ObjectID = "2yH-K9-vzn"; */
+"2yH-K9-vzn.title" = "TitleNLabo";
+
+/* Class = "UIButton"; normalTitle = "Volver"; ObjectID = "7P2-lC-is2"; */
+"7P2-lC-is2.normalTitle" = "Volver";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "7jt-vi-iEw"; */
+"7jt-vi-iEw.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Facultad"; ObjectID = "7pM-XL-rBh"; */
+"7pM-XL-rBh.title" = "Facultad";
+
+/* Class = "UILabel"; text = "M"; ObjectID = "9Eu-93-Fuy"; */
+"9Eu-93-Fuy.text" = "M";
+
+/* Class = "UIViewController"; title = "Calendario: 2019 -2"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Calendario: 2019 -2";
+
+/* Class = "UILabel"; text = "Coordinaciones"; ObjectID = "DPX-Pn-zgm"; */
+"DPX-Pn-zgm.text" = "Coordinaciones";
+
+/* Class = "UINavigationItem"; title = "Facultad"; ObjectID = "EHS-9E-cuK"; */
+"EHS-9E-cuK.title" = "Facultad";
+
+/* Class = "UIViewController"; title = "Galería"; ObjectID = "FY8-Ia-Ca6"; */
+"FY8-Ia-Ca6.title" = "Galería";
+
+/* Class = "UINavigationItem"; title = "Configuración"; ObjectID = "Fgt-x3-u9b"; */
+"Fgt-x3-u9b.title" = "Configuración";
+
+/* Class = "UILabel"; text = "Ubicación"; ObjectID = "GxP-BO-cnz"; */
+"GxP-BO-cnz.text" = "Ubicación";
+
+/* Class = "UITabBarItem"; title = "Calendario"; ObjectID = "HlB-rW-2Dq"; */
+"HlB-rW-2Dq.title" = "Calendario";
+
+/* Class = "UILabel"; text = "V"; ObjectID = "I3k-uj-Tkh"; */
+"I3k-uj-Tkh.text" = "V";
+
+/* Class = "UIViewController"; title = "Horarios"; ObjectID = "Ka5-1E-kot"; */
+"Ka5-1E-kot.title" = "Horarios";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "PIA-sa-buO"; */
+"PIA-sa-buO.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "R64-JP-49X"; */
+"R64-JP-49X.title" = "Item";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "Rgv-Da-E7C"; */
+"Rgv-Da-E7C.text" = "2";
+
+/* Class = "UITabBarItem"; title = "Configuración"; ObjectID = "S6l-fp-RSR"; */
+"S6l-fp-RSR.title" = "Configuración";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Te0-lw-Ia1"; */
+"Te0-lw-Ia1.title" = "Item";
+
+/* Class = "UILabel"; text = "Departamentos"; ObjectID = "UOk-AR-Coe"; */
+"UOk-AR-Coe.text" = "Departamentos";
+
+/* Class = "UIViewController"; title = "configuracion"; ObjectID = "UsE-dE-y5C"; */
+"UsE-dE-y5C.title" = "configuracion";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "WGh-wh-b4C"; */
+"WGh-wh-b4C.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIViewController"; title = "Archivo"; ObjectID = "WU4-Le-nFf"; */
+"WU4-Le-nFf.title" = "Archivo";
+
+/* Class = "UITextView"; text = "Bibliotecas, auditorios, Esculturas."; ObjectID = "XwX-xK-GXk"; */
+"XwX-xK-GXk.text" = "Bibliotecas, auditorios, Esculturas.";
+
+/* Class = "UIViewController"; title = "UNAM"; ObjectID = "ZYX-IF-COZ"; */
+"ZYX-IF-COZ.title" = "UNAM";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bBw-JG-L4J"; */
+"bBw-JG-L4J.text" = "Title";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "bJZ-yr-KAm"; */
+"bJZ-yr-KAm.text" = "Detail";
+
+/* Class = "UIViewController"; title = "Selección"; ObjectID = "c4d-ZN-M1z"; */
+"c4d-ZN-M1z.title" = "Selección";
+
+/* Class = "UIViewController"; title = "Archivo"; ObjectID = "cEa-Pn-rCp"; */
+"cEa-Pn-rCp.title" = "Archivo";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "crc-OD-JY0"; */
+"crc-OD-JY0.text" = "Label";
+
+/* Class = "UILabel"; text = "Mont"; ObjectID = "gYT-fW-X8G"; */
+"gYT-fW-X8G.text" = "Mont";
+
+/* Class = "UILabel"; text = "Ubicación"; ObjectID = "hEG-Em-G39"; */
+"hEG-Em-G39.text" = "Ubicación";
+
+/* Class = "UITabBarItem"; title = "Recursos"; ObjectID = "hhF-4v-58m"; */
+"hhF-4v-58m.title" = "Recursos";
+
+/* Class = "UIViewController"; title = "Información"; ObjectID = "jCe-lc-lgC"; */
+"jCe-lc-lgC.title" = "Información";
+
+/* Class = "UILabel"; text = "M"; ObjectID = "mbm-G8-sil"; */
+"mbm-G8-sil.text" = "M";
+
+/* Class = "UITextView"; text = "Depto"; ObjectID = "mem-2a-Pc0"; */
+"mem-2a-Pc0.text" = "Depto";
+
+/* Class = "UINavigationItem"; title = "Información"; ObjectID = "myg-UP-L2i"; */
+"myg-UP-L2i.title" = "Información";
+
+/* Class = "UILabel"; text = "L"; ObjectID = "osZ-BD-l5u"; */
+"osZ-BD-l5u.text" = "L";
+
+/* Class = "UILabel"; text = "J"; ObjectID = "rdZ-SG-SJd"; */
+"rdZ-SG-SJd.text" = "J";
+
+/* Class = "UINavigationItem"; title = "Calendario: 2019 -2"; ObjectID = "tSz-qE-CYz"; */
+"tSz-qE-CYz.title" = "Calendario: 2019 -2";
+
+/* Class = "UIViewController"; title = "SIAE"; ObjectID = "taR-7G-BY5"; */
+"taR-7G-BY5.title" = "SIAE";
+
+/* Class = "UINavigationItem"; title = "Recursos"; ObjectID = "tpf-wg-qCK"; */
+"tpf-wg-qCK.title" = "Recursos";
+
+/* Class = "UIViewController"; title = "Carreras"; ObjectID = "wJh-RY-33S"; */
+"wJh-RY-33S.title" = "Carreras";
+
+/* Class = "UIViewController"; title = "FI"; ObjectID = "wNH-7z-A6o"; */
+"wNH-7z-A6o.title" = "FI";
+
+/* Class = "UILabel"; text = "Year"; ObjectID = "wYP-IP-eGL"; */
+"wYP-IP-eGL.text" = "Year";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "x4U-63-hDj"; */
+"x4U-63-hDj.title" = "Item";
+
+/* Class = "UIViewController"; title = "Divisiones"; ObjectID = "yV0-ha-Zol"; */
+"yV0-ha-Zol.title" = "Divisiones";
+
+/* Class = "UITextView"; text = "kk"; ObjectID = "yzZ-YX-vFe"; */
+"yzZ-YX-vFe.text" = "kk";
+
+/* Class = "UITextView"; text = "Coordina"; ObjectID = "ziK-9I-4P7"; */
+"ziK-9I-4P7.text" = "Coordina";

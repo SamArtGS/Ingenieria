@@ -11,7 +11,7 @@ import Photos
 
 class GaleriaViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UINavigationControllerDelegate{
     var coleccion: UICollectionView!
-    var Imagenes = ["pic1","pic2","pic3","pic4","pic5","pic6","pic7"]
+    var Imagenes = ["pic1","pic2","pic3","pic4","pic5","pic6","pic7","jkl","Anexus","palacioMin"]
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Imagenes.count
     }

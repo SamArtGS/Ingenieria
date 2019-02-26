@@ -446,6 +446,7 @@ class Calendario : UIViewController,UICollectionViewDataSource,JTAppleCalendarVi
             
         }
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         let dateFro = DateFormatter()
         dateFro.dateFormat = "dd/MM/yyyy"
@@ -456,7 +457,13 @@ class Calendario : UIViewController,UICollectionViewDataSource,JTAppleCalendarVi
     }
     
     
-    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        let theDate = Date()
+        if self.calendarView != nil {
+            NSLog("anchorDate: \(theDate)")
+            self.calendarView.viewWillTransition(to: size, with: coordinator, anchorDate: theDate)
+        }
+    }
     
     override func viewDidLoad() {
         mont.adjustsFontSizeToFitWidth = true
@@ -467,7 +474,6 @@ class Calendario : UIViewController,UICollectionViewDataSource,JTAppleCalendarVi
         
         navigationController?.navigationBar.barStyle = .black
     }
-   
 }
 
 extension UICollectionViewFlowLayout {

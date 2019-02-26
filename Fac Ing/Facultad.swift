@@ -14,7 +14,7 @@ class Facultad:UIViewController,UITableViewDelegate,UITableViewDataSource,UIColl
     var arregloImagenes = ["carreras","divisiones","ubicaciones","diplom","biblioteca","laboratorios","auditorio","cultura","instituto","asocia","galeria"]
     
     //Collection View Controller
-    let mostImportant:[String] = ["img1","img7","img8","img10","bibliotecaa","alber","img14"]
+    let mostImportant:[String] = ["img1","img7","img8","img10","bibliotecaa","alber","img9","img14"]
     
     
     @IBOutlet var Highlights: UICollectionView!
@@ -118,33 +118,11 @@ class Facultad:UIViewController,UITableViewDelegate,UITableViewDataSource,UIColl
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         HightLights.GlobalVariable.recibido = indexPath.row
     }
-    
-    func NotificacionCalendario(Tipo: String){
-        if #available(iOS 10.0, *) {
-            let contenido = UNMutableNotificationContent()
-            contenido.title = Tipo
-            contenido.body = "Body"
-            contenido.sound = UNNotificationSound.default
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3.0, repeats: false)
-            let request = UNNotificationRequest(identifier: "FiveSecond", content: contenido, trigger: trigger)
-            let center = UNUserNotificationCenter.current()
-            center.add(request) { (error) in
-            }
-        } else {
-            let notification = UILocalNotification()
-            notification.alertBody = "Notification"
-            notification.fireDate = NSDate(timeIntervalSinceNow:60) as Date
-            notification.repeatInterval = NSCalendar.Unit.minute
-            UIApplication.shared.cancelAllLocalNotifications()
-            UIApplication.shared.scheduledLocalNotifications = [notification]
-        }
-    }
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.hidesBarsOnTap = false
     }
     @IBOutlet var TablaFac: UITableView!
     override func viewDidLoad() {
-        NotificacionCalendario(Tipo: "Hola")
         automaticallyAdjustsScrollViewInsets = false
         super.viewDidLoad()
         TablaFac.backgroundColor = .clear

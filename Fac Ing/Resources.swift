@@ -27,6 +27,7 @@ class Resources: UIViewController,UITableViewDelegate,UITableViewDataSource{
         return celda
     }
     override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = false
          navigationController?.hidesBarsOnTap = false
     }
     func getTitlee(inter:Int) -> String {

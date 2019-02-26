@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bibliotecaa.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "icons8-print-60.png",
       "scale" : "2x"
     },
     {

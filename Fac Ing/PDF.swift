@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PDFKit
 class PDF: UIViewController,UIWebViewDelegate{
     var opcionselected:[Int]?
     var PDFSeries:[String] = [
@@ -206,9 +206,14 @@ class PDF: UIViewController,UIWebViewDelegate{
         "http://servacad.ingenieria.unam.mx/_adicionales/titulacion/Instructivo_Ceremonia.pdf"]
     var PDFConferencias:[String] = ["http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5027.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5036.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5029.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5035.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5032.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5033.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5030.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5034.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5037.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5028.pdf","http://basicas.fi-c.unam.mx/dcb_sii/public/files/calendario_actividades/2019-2_5031.pdf"]
     
-    var PDFManuales:[String] = ["http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-10_AyO.pdf",""]
-    var PDFExPasados:[String] = [""]
-    var PDFGuias:[String] = [""]
+    var PDFManuales:[String] = ["http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-10_AyO.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/EyM/Plan2016/MADO15.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/EyO/Documentos/MADO-16-EMO.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-07-F.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-09-FE.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/TEM/Documentos/practicas.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-08-FF.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/FQ/MADO/MADO-11_FO.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Quimica/lab_quimica/MADO-12%20(2019-2).pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/FisicaQuimica/Termodinamica/materias/termo2006/practicas.pdf",""]
+    var PDFExPasados:[String] = ["http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/examenes/1EF2016-2%20A.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/examenes/1EF2016-2%20B.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/examenes/2EF2016-2.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/examenes/1EF2019-1%20A.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/Algebra/documents/examenes/1EF2019-1%20B.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/examenes/2018_2B.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/examenes/2018_2C.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/examenes/2018_2S.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/examenes/1EF17-1A.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/examenes/1EF17-1C.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/examenes/2EF17-1.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/S1EFA18-2.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/S1EFC18-2.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/2EFAB18-1_dos.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoGeometriaAnalitica/documents/examenes/PFA_2016-2.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoGeometriaAnalitica/documents/examenes/SFA_2016-2.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/AN/Examenes/2017-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/AN/Examenes/2018-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Finales/1EF/1EF_2019-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Finales/1EF/1EF_2018-2_TV_C2006.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Finales/2EF/2EF_2018-2.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Finales/2EF/2EF_2019-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/Examenes/1FM_2018-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/Examenes/2F_2018-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/CyD/Examenes/Primer%20Final%202018-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/M/E/Examenes/2018-1/Primer%20Final%202018-1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Examenes/2017-2/SOL_1EF_PROB_MAT_18_1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Examenes/2017-2/SOL_2EF_est_18_1.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Examenes/2017-2/PROBA_2EF_2018-1solucion.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/PyE/Examenes/2017-2/SOL_2EF_est_18_1.pdf"]
+    
+    var PDFExPasadosEx:[String] = ["http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/AlgebraLineal/documents/examenes/2018_2E.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/examenes/1EE11_2.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoIntegral/documents/examenes/1EE11_1.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/1EEA18-1.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/1EEA18-1.pdf","http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CalculoVectorial/documents/material/S2EE18-2.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Extraordinarios/1EE/1EE_15-2.pdf","http://dcb.ingenieria.unam.mx/wp-content/themes/tempera-child/CoordinacionesAcademicas/CA/ED/Examenes/Extraordinarios/1EE/1EE_16-1.pdf"]
+    
+    
+    
+    
     
     
     
@@ -222,6 +227,7 @@ class PDF: UIViewController,UIWebViewDelegate{
     func webViewDidFinishLoad(_ webView: UIWebView){
         Indicador.stopAnimating()
     }
+    var urss: String?
     @IBOutlet var PDFView: UIWebView!
     override func viewDidLoad() {
         self.navigationController?.hidesBarsOnTap = true
@@ -231,6 +237,7 @@ class PDF: UIViewController,UIWebViewDelegate{
         switch opcionselected![0] {
         case 0:
             let url : NSURL! = NSURL(string: PDFSeries[opcionselected![1]])
+            urss = PDFSeries[opcionselected![1]]
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
@@ -242,6 +249,7 @@ class PDF: UIViewController,UIWebViewDelegate{
         case 2:
             let url : NSURL! = NSURL(string: PDFTallerEjercicios[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
+            urss = PDFTallerEjercicios[opcionselected![1]]
             PDFView.scalesPageToFit = true
             super.viewDidLoad()
             break
@@ -249,33 +257,41 @@ class PDF: UIViewController,UIWebViewDelegate{
             let url : NSURL! = NSURL(string: PDFReglamentos[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+            urss = PDFReglamentos[opcionselected![1]]
             super.viewDidLoad()
             break
         case 4:
             let url : NSURL! = NSURL(string: PDFPAsig[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+            urss = PDFPAsig[opcionselected![1]]
             super.viewDidLoad()
             break
         case 5:
             let url : NSURL! = NSURL(string: PDFConferencias[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+            urss = PDFConferencias[opcionselected![1]]
             super.viewDidLoad()
             break
         case 6:
             let url : NSURL! = NSURL(string: PDFManuales[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+            urss = PDFManuales[opcionselected![1]]
             super.viewDidLoad()
             break
         case 7:
             let url : NSURL! = NSURL(string: PDFExPasados[opcionselected![1]])
             PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
             PDFView.scalesPageToFit = true
+           urss = PDFExPasados[opcionselected![1]]
             break
         case 8:
-            super.viewDidLoad()
+            let url : NSURL! = NSURL(string: PDFExPasadosEx[opcionselected![1]])
+            PDFView.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
+            PDFView.scalesPageToFit = true
+            urss = PDFExPasados[opcionselected![1]]
             break
         case 9:
             break
@@ -293,9 +309,24 @@ class PDF: UIViewController,UIWebViewDelegate{
             self.present(alert, animated: true)
             super.viewDidLoad()
         }
-    }
+    }/*
+    @IBAction func print(_ sender: Any) {
+        if #available(iOS 11.0, *) {
+            let pdfDocument = PDFDocument(url: urss! as URL)
+            let printController = UIPrintInteractionController.shared
+            let printInfo = UIPrintInfo(dictionary:nil)
+            
+            printInfo.outputType = UIPrintInfo.OutputType.general
+            printInfo.jobName = "Facultad de Ingeniería"
+            printController.printInfo = printInfo
+            printController.printingItem = pdfDocument
+            printController.present(animated: true, completionHandler: nil)
+        } else {
+        }
+    }*/
+    
     @IBAction func Share(_ sender: Any) {
-        let Activity = UIActivityViewController(activityItems: [URL(string: PDFSeries[opcionselected![1]]) ?? "google.com"], applicationActivities: nil)
+        let Activity = UIActivityViewController(activityItems: [URL(string: urss!) as Any], applicationActivities: nil)
         Activity.popoverPresentationController?.sourceView = self.view
         self.present(Activity, animated: true,completion: nil)
     }
@@ -323,8 +354,13 @@ class PDF: UIViewController,UIWebViewDelegate{
         super.viewWillDisappear(animated)
         AppDelegate.OrientationManager.landscapeSupported = false
         //The code below will automatically rotate your device's orientation when you exit this ViewController
-        let orientationValue = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(orientationValue, forKey: "orientation")
+        if UIDevice.current.userInterfaceIdiom == .phone{
+            let orientationValue = UIInterfaceOrientation.portrait.rawValue
+            UIDevice.current.setValue(orientationValue, forKey: "orientation")
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.tabBar.isHidden = true
     }
 }
 extension UIViewController{

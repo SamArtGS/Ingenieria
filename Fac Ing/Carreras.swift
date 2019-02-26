@@ -38,8 +38,6 @@ class Carreras: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     override func viewDidLoad() {
         self.navigationController?.hidesBarsOnTap = false
-        let orientationValue = UIInterfaceOrientation.portrait.rawValue
-        UIDevice.current.setValue(orientationValue, forKey: "orientation")
         automaticallyAdjustsScrollViewInsets = false
         super.viewDidLoad()
 

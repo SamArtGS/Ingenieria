@@ -28,6 +28,8 @@ class WebThor3: UIViewController,UIWebViewDelegate{
     func webViewDidFinishLoad(_ webView: UIWebView){
         Indicador.stopAnimating()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+    }
     @IBOutlet var WebView: UIWebView!
     override func viewDidLoad() {
         automaticallyAdjustsScrollViewInsets = false

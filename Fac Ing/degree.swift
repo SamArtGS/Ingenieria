@@ -26,6 +26,7 @@ class degree: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.hidesBarsOnTap = false
+       // self.tabBarController?
         titulo.text = titulos[selectedd![0]]
         imagen.image = UIImage(named: imagenes[selectedd![0]])
         div.text = seccciones[selectedd![1]]
